@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Love</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: bgAnim 10s infinite alternate;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0.5em;
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .heart {
+      font-size: 4em;
+      animation: pulse 1s infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes bgAnim {
+      0% { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
+      100% { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>To My Love</h1>
+  <div class="heart">❤️</div>
+  <p>
+    Every moment with you feels magical.  
+    I made this just for you to say how much I love you.  
+    You mean the world to me.
+  </p>
+
+  <!-- Add music (optional) -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
